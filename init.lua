@@ -21,3 +21,9 @@ if astronvim.default_colorscheme then
 end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
+
+if vim.g.neovide then
+    -- Put anything you want to happen only in Neovide here
+  vim.o.guifont = "JetBrainsMonoNL Nerd Font:h7" -- text below applies for VimScript
+  vim.g.neovide_scale_factor = 1.0
+end
